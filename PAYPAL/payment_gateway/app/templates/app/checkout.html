@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOutr</title>
+</head>
+<body>
+
+    <h1>CheckOut Page</h1>
+
+    <form action="{% url 'create_payment' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Pay with paypal</button>
+    </form>
+    
+</body>
+</html>
